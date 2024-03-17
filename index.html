@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <!--<link rel="stylesheet" href="reset.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecera">
+        <img class="logo" src="/img/alura.webp" alt="" >
+        <a href="https://www.aluracursos.com/">Visitar Alura para mas contenido y cursos</a>
+    </header>
+    <h1 class="titulo">BIENVENDIO AL SITIO CIFRADO DE TEXTO</h1>
+    <main>
+        <div class="seccion1">
+            <h2 class="subtitulos">Texto no cifrado</h2>
+            <textarea name="textoAcifrar" id="areaUno" cols="80" rows="23"  resize="none" placeholder="Introduce el texto aqui"></textarea>
+            <!--<button class="btn-copiar" id="copiarUno">COPIAR</button>-->
+            <div class="boton">
+                <button onclick="cifrarTexto();" class="btn" id="btn1">CIFRAR</button>
+                <button onclick="descifrarTexto();" class="btn" id="btn2">DESCIFRAR</button>
+            </div>
+        </div>
+       
+        <div class="seccion2">
+            <h2 class="subtitulos">Texto cifrado</h2>
+            <textarea name="textoAcifrar" id="areaDos" cols="60" rows="23" placeholder="Introduce el texto aqui" autocapitalize="characters"></textarea>
+            <button onclick="btnCopiar();" class="btn-copiar" id="btnCopiar">COPIAR</button>
+        </div>
+    </main>
+
+    <footer>
+        <hr></hr>
+        <p>Hageo Alvarado Alvares</p>
+        <p>2024</p>
+        <a href="https://www.linkedin.com/in/hageo-alvarado-alvares/">linkedIn</a>
+
+    </footer>
+
+    <script src="encriptor.js"></script>
+</body>
+</html>
